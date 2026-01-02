@@ -8,10 +8,18 @@ packages = [{ include = "retailrag_agent", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+
+# Core data / DB
 pandas = "^2.2.2"
 sqlalchemy = "^2.0.32"
 psycopg2-binary = "^2.9.9"
+
+# Configuration / env
+pydantic = "^2.8.2"
+pydantic-settings = "^2.4.0"
 python-dotenv = "^1.0.1"
+
+# Dev UX
 rich = "^13.7.1"
 
 [tool.poetry.group.dev.dependencies]

@@ -8,3 +8,5 @@ __pycache__
 dev/Gemini Chatbot (including RAGAS).ipynb
 Makefile
 docker-compose.yml
+dev/db_schema_analytics.json
+dev/db_schema.json
