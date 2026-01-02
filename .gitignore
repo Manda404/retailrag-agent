@@ -1,0 +1,10 @@
+.env
+poetry.lock
+.pytest_cache
+.venv
+logs
+__pycache__
+
+dev/Gemini Chatbot (including RAGAS).ipynb
+Makefile
+docker-compose.yml

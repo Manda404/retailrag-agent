@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "retailrag-agent"
+version = "0.1.0"
+description = "Retail analytics + dimensional modeling + PostgreSQL + RAG"
+authors = ["Manda Surel <s239150.eps@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "retailrag_agent", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.2"
+sqlalchemy = "^2.0.32"
+psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.1"
+rich = "^13.7.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+black = "^24.8.0"
+isort = "^5.13.2"
+mypy = "^1.11.2"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
